@@ -36,6 +36,7 @@ src/
 │       └── services/
 ├── routes/          # Definição de rotas da API
 └── server.ts        # Ponto de entrada da aplicação
+```
 
 # 📌 Funcionalidades Atuais
 
