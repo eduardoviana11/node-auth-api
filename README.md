@@ -1,4 +1,4 @@
-# 🔐 Node Auth API
+# 🔐 API de Autenticação em Node
 
 Esta é uma API de autenticação desenvolvida com **Node.js** e **TypeScript**, focada em boas práticas de arquitetura, segurança e escalabilidade. O projeto foi construído seguindo princípios **SOLID**.
 
@@ -13,6 +13,7 @@ Esta é uma API de autenticação desenvolvida com **Node.js** e **TypeScript**,
 * **PostgreSQL**
 * **Argon2**
 * **JWT (JSON Web Token)**
+* **Docker**
 
 # 🛡️ Elementos de Segurança
 
@@ -38,24 +39,13 @@ src/
 └── server.ts        # Ponto de entrada da aplicação
 ```
 
-# 📌 Funcionalidades Atuais
+# 📌 Funcionalidades
 
 * `POST /auth/register` - Criação de novos usuários.
 * `POST /auth/login` - Autenticação e geração de token JWT.
 * `GET /auth/me` - Recuperação de dados do perfil logado.
 * `PATCH /auth/me` - Atualização de dados (Nome, Email, Senha).
 * `DELETE /auth/me` - Exclusão de conta.
-
-# 🛣️ Funcionalidades Futuras
-
-Os próximos passos de desenvolvimento são:
-
-- [ ] **Dockerização:** Configuração de containers para a API, Postgres e Redis.
-- [ ] **Refresh Tokens:** Implementação de Access e Refresh Tokens para maior segurança.
-- [ ] **Redis Cache:** Uso de Redis para Blacklist de tokens e Rate Limiting.
-- [ ] **Recuperação de Senha:** Fluxo de esqueci minha senha com envio de e-mail.
-- [ ] **Testes Automatizados:** Implementação de testes unitários e de integração com Jest/Supertest.
-- [ ] **Documentação:** Swagger/OpenAPI para documentar os endpoints.
 
 # 🔧 Como rodar o projeto (Desenvolvimento)
 
